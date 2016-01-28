@@ -1,6 +1,6 @@
 {
   "name": "tinyci",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Minimal CI built on GitHub webhooks",
   "main": "tinyci.js",
   "devDependencies": {
@@ -20,6 +20,15 @@
   "bugs": {
     "url": "https://github.com/wski/tinyci/issues"
   },
+  "keywords": [
+    "ci",
+    "continuous",
+    "integration",
+    "build",
+    "deploy",
+    "small",
+    "test"
+  ],
   "homepage": "https://github.com/wski/tinyci",
   "dependencies": {
     "babel-runtime": "^6.3.19",
