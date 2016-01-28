@@ -1,0 +1,30 @@
+{
+  "name": "tinyci",
+  "version": "0.1.0",
+  "description": "Minimal CI built on GitHub webhooks",
+  "main": "tinyci.js",
+  "devDependencies": {
+    "eslint": "^1.10.3",
+    "eslint-config-google": "^0.3.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --harmony-destructuring tinyci.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wski/tinyci"
+  },
+  "author": "wski <contact.mattdylan@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wski/tinyci/issues"
+  },
+  "homepage": "https://github.com/wski/tinyci",
+  "dependencies": {
+    "babel-runtime": "^6.3.19",
+    "koa": "^1.1.2",
+    "koa-bodyparser": "^2.0.1",
+    "koa-router": "^5.3.0"
+  }
+}

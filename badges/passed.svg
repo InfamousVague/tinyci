@@ -1,0 +1,13 @@
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   width="91"
+   height="20">
+   <g>
+     <rect x="0" y="0" width="91" height="20" fill="#333" />
+     <text x="5" y="14" font-family="Arial" font-size="13" fill="#ddd" >build</text>
+     <g>
+       <rect x="37" y="0" width="91" height="20" fill="#2ecc71" />
+       <text x="42" y="14" font-family="Arial" font-size="13" fill="#fff" >passing</text>
+     </g>
+   </g>
+</svg>
