@@ -9,7 +9,8 @@ module.exports = function(repos) {
       failed: null,
       hash: null,
       time: null,
-      passed: null
+      passed: null,
+      output: null
     };
   });
   return status;

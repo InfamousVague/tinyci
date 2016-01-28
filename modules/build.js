@@ -8,6 +8,7 @@ module.exports = function(repository, status, payload, callback) {
     branch = payload.ref.split('/')[2];
   }
   if (builds[repository].watch.indexOf(branch) > -1) {
+    status[repository].output = [];
     status[repository].building = true;
     status[repository].hash = (payload.after) ? payload.after : null;
     status[repository].time = Date.now();
@@ -21,9 +22,12 @@ module.exports = function(repository, status, payload, callback) {
           status[repository].passed = false;
           status[repository].failed = true;
           status[repository].error = stderr;
+          status[repository].output.push(err);
         } else if (stderr) {
           status[repository].error = stderr;
+          status[repository].output.push(stderr);
         } else {
+          status[repository].output.push(stdout);
           status[repository].failed = false;
           status[repository].error = null;
         }
